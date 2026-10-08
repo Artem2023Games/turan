@@ -1,0 +1,100 @@
+/* ============================================
+   THEMES.CSS — Переменные тёмной и светлой темы
+   ============================================ */
+
+/* ===== ТЁМНАЯ ТЕМА (по умолчанию) ===== */
+:root {
+    /* Фоны */
+    --bg: #0f0f1a;
+    --bg-nav: rgba(15, 15, 26, 0.95);
+    --bg-hero: radial-gradient(ellipse at center, #1a1a3e 0%, #0f0f1a 70%);
+    --bg-card: linear-gradient(135deg, #1a1a3e, #15152a);
+    --bg-panel: rgba(26, 26, 62, 0.98);
+    --bg-country: rgba(126, 200, 227, 0.08);
+    --bg-country-hover: rgba(126, 200, 227, 0.15);
+    --bg-table: rgba(26, 26, 62, 0.5);
+    --bg-th: rgba(126, 200, 227, 0.15);
+    --bg-tr-hover: rgba(126, 200, 227, 0.05);
+    --bg-input: rgba(126, 200, 227, 0.08);
+    --bg-modal: rgba(15, 15, 26, 0.98);
+
+    /* Границы */
+    --border: rgba(126, 200, 227, 0.2);
+    --border-light: rgba(126, 200, 227, 0.1);
+    --bg-card-border: rgba(126, 200, 227, 0.15);
+    --bg-card-hover: rgba(126, 200, 227, 0.5);
+
+    /* Текст */
+    --text: #e0e0e0;
+    --text-muted: #aaa;
+    --text-dim: #999;
+    --text-footer: #666;
+    --text-inverse: #0f0f1a;
+
+    /* Акценты */
+    --accent: #7ec8e3;
+    --accent-glow: rgba(126, 200, 227, 0.5);
+    --accent-hover: #5bb8d8;
+    --gold: #ffd700;
+    --gold-glow: rgba(255, 215, 0, 0.5);
+
+    /* Тени */
+    --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
+    --shadow-accent: 0 5px 25px var(--accent-glow);
+
+    /* Переходы */
+    --transition-fast: 0.2s ease;
+    --transition: 0.3s ease;
+    --transition-slow: 0.4s ease;
+
+    /* Скругления */
+    --radius-sm: 8px;
+    --radius: 12px;
+    --radius-lg: 15px;
+    --radius-full: 50%;
+}
+
+/* ===== СВЕТЛАЯ ТЕМА ===== */
+[data-theme="light"] {
+    /* Фоны */
+    --bg: #f5f5f7;
+    --bg-nav: rgba(255, 255, 255, 0.95);
+    --bg-hero: radial-gradient(ellipse at center, #e0e8f0 0%, #f5f5f7 70%);
+    --bg-card: linear-gradient(135deg, #ffffff, #f0f0f5);
+    --bg-panel: rgba(255, 255, 255, 0.98);
+    --bg-country: rgba(0, 0, 0, 0.04);
+    --bg-country-hover: rgba(0, 0, 0, 0.08);
+    --bg-table: rgba(255, 255, 255, 0.8);
+    --bg-th: rgba(0, 0, 0, 0.05);
+    --bg-tr-hover: rgba(0, 0, 0, 0.03);
+    --bg-input: rgba(0, 0, 0, 0.04);
+    --bg-modal: rgba(255, 255, 255, 0.98);
+
+    /* Границы */
+    --border: rgba(0, 0, 0, 0.1);
+    --border-light: rgba(0, 0, 0, 0.05);
+    --bg-card-border: rgba(0, 0, 0, 0.1);
+    --bg-card-hover: rgba(0, 0, 0, 0.25);
+
+    /* Текст */
+    --text: #1a1a2e;
+    --text-muted: #555;
+    --text-dim: #777;
+    --text-footer: #888;
+    --text-inverse: #ffffff;
+
+    /* Акценты */
+    --accent: #2a7a9a;
+    --accent-glow: rgba(42, 122, 154, 0.3);
+    --accent-hover: #1f5d75;
+    --gold: #c9a000;
+    --gold-glow: rgba(201, 160, 0, 0.3);
+
+    /* Тени */
+    --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+    --shadow-accent: 0 5px 25px var(--accent-glow);
+}

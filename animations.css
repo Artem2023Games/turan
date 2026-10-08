@@ -1,0 +1,266 @@
+/* ============================================
+   ANIMATIONS.CSS — Анимации, параллакс, частицы
+   ============================================ */
+
+/* ===== ЧАСТИЦЫ (фон) ===== */
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* ===== ПОЯВЛЕНИЕ ПРИ СКРОЛЛЕ ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Задержки для каскадного появления */
+.reveal.delay-1 { transition-delay: 0.1s; }
+.reveal.delay-2 { transition-delay: 0.2s; }
+.reveal.delay-3 { transition-delay: 0.3s; }
+.reveal.delay-4 { transition-delay: 0.4s; }
+.reveal.delay-5 { transition-delay: 0.5s; }
+.reveal.delay-6 { transition-delay: 0.6s; }
+
+/* ===== ПАРАЛЛАКС ===== */
+.parallax-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(126, 200, 227, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+    transition: transform 0.1s linear;
+}
+
+/* ===== ПЛАВНОЕ ПОЯВЛЕНИЕ HERO ===== */
+.hero h1 {
+    animation: fadeInDown 1s ease;
+}
+
+.hero .subtitle {
+    animation: fadeInDown 1.2s ease;
+}
+
+.flag-otg {
+    animation: fadeInUp 1.5s ease;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== ПУЛЬСАЦИЯ СОЛНЦА НА ФЛАГЕ ===== */
+.flag-otg:hover img {
+    animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.15); }
+}
+
+/* ===== ПЛАВАЮЩИЕ КНОПКИ ===== */
+.settings-btn {
+    animation: floatBtn 3s ease-in-out infinite;
+}
+
+@keyframes floatBtn {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-5px) rotate(0deg); }
+}
+
+.settings-btn:hover {
+    animation: none;
+}
+
+/* ===== АНИМАЦИЯ КАРТОЧЕК ===== */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(126, 200, 227, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+/* ===== АНИМАЦИЯ ЛИНИИ ТАЙМЛАЙНА ===== */
+.timeline-item {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item:nth-child(even) {
+    transform: translateX(30px);
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ===== АНИМАЦИЯ ПОЛОС ДИАГРАММЫ ===== */
+.chart-bar {
+    width: 0;
+    transition: width 1.2s ease;
+}
+
+.chart-bar.animated {
+    /* width задаётся inline-стилем из HTML */
+}
+
+/* ===== АНИМАЦИЯ СЧЁТЧИКА ===== */
+.counter-number {
+    animation: countPulse 3s ease infinite;
+}
+
+@keyframes countPulse {
+    0%, 100% { text-shadow: 0 0 20px var(--accent-glow); }
+    50% { text-shadow: 0 0 40px var(--accent-glow), 0 0 60px var(--accent-glow); }
+}
+
+/* ===== ПЛАВНОЕ ПОЯВЛЕНИЕ СЕКЦИЙ ===== */
+section {
+    animation: sectionFade 1s ease;
+}
+
+@keyframes sectionFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===== HOVER-ЭФФЕКТЫ ===== */
+.country-item,
+.timeline-content,
+.card,
+.alphabet-card,
+.chart-row {
+    will-change: transform;
+}
+
+.country-item:hover {
+    transform: translateX(5px);
+}
+
+.alphabet-card:hover .alphabet-sample {
+    color: var(--gold);
+    transition: color 0.3s ease;
+}
+
+/* ===== ЗВЁЗДЫ НА ФОНЕ (только тёмная тема) ===== */
+[data-theme="dark"] .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(2px 2px at 20% 30%, rgba(255, 255, 255, 0.4), transparent),
+        radial-gradient(2px 2px at 60% 70%, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(1px 1px at 50% 50%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 80% 10%, rgba(255, 255, 255, 0.4), transparent),
+        radial-gradient(2px 2px at 90% 60%, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(1px 1px at 33% 80%, rgba(255, 255, 255, 0.4), transparent);
+    background-size: 200% 200%;
+    animation: starsMove 60s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes starsMove {
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%; }
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== ПЛАВНОЕ ПЕРЕКЛЮЧЕНИЕ ТЕМЫ ===== */
+body,
+nav,
+.card,
+.settings-panel,
+.country-item,
+section h2,
+footer {
+    transition:
+        background var(--transition-slow),
+        color var(--transition-slow),
+        border-color var(--transition-slow);
+}
+
+/* ===== АНИМАЦИЯ ПРИ НАВЕДЕНИИ НА ФЛАГ ===== */
+.flag-otg {
+    position: relative;
+}
+
+.flag-otg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+    box-shadow: inset 0 0 0 0 var(--accent-glow);
+    transition: box-shadow 0.4s ease;
+    pointer-events: none;
+}
+
+.flag-otg:hover::after {
+    box-shadow: inset 0 0 40px 5px var(--accent-glow);
+}
+
+/* ===== ПЛАВНАЯ ПРОКРУТКА ЯКОРЕЙ ===== */
+:target {
+    scroll-margin-top: 80px;
+}
+
+/* ===== ОТКЛЮЧЕНИЕ АНИМАЦИЙ ДЛЯ СЛАБЫХ УСТРОЙСТВ ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}

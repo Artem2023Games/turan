@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="site_title">Turkic Family — Land of All Turks</title>
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- ===== ЧАСТИЦЫ ===== -->
+    <canvas id="particles"></canvas>
+    <div class="parallax-bg"></div>
+
+    <!-- ===== НАВИГАЦИЯ ===== -->
+    <nav>
+        <div class="nav-inner">
+            <div class="logo" data-key="logo">Turks</div>
+            <button class="burger" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#flag" data-key="nav_flag">Flag</a></li>
+                <li><a href="#countries" data-key="nav_countries">Countries</a></li>
+                <li><a href="#peoples" data-key="nav_peoples">Peoples</a></li>
+                <li><a href="#history" data-key="nav_history">History</a></li>
+                <li><a href="#timeline" data-key="nav_timeline">Timeline</a></li>
+                <li><a href="#people" data-key="nav_people">People</a></li>
+                <li><a href="#mythology" data-key="nav_mythology">Mythology</a></li>
+                <li><a href="#tamga" data-key="nav_tamga">Tamgas</a></li>
+                <li><a href="#holidays" data-key="nav_holidays">Holidays</a></li>
+                <li><a href="#languages" data-key="nav_languages">Languages</a></li>
+                <li><a href="#alphabets" data-key="nav_alphabets">Alphabets</a></li>
+                <li><a href="#population" data-key="nav_population">Population</a></li>
+                <li><a href="#distance" data-key="nav_distance">Distance</a></li>
+                <li><a href="#facts" data-key="nav_facts">Facts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== ГЕРОЙ ===== -->
+    <header class="hero">
+        <h1 data-key="hero_title">Turkic Family</h1>
+        <p class="subtitle" data-key="hero_subtitle">Land of All Turks</p>
+        <div class="flag-otg" onclick="return false;">
+            <img src="flag.png" alt="Flag of OTS">
+        </div>
+    </header>
+
+    <!-- ===== ФЛАГ ===== -->
+    <section id="flag">
+        <h2 data-key="flag_title">Flag</h2>
+        <div class="cards">
+            <div class="card">
+                <span class="icon">🟦</span>
+                <h3 data-key="flag_c1_title">Turquoise background</h3>
+                <p data-key="flag_c1_text">The color of Tengri — the sky and ancient god of the Turks.</p>
+            </div>
+            <div class="card">
+                <span class="icon">⬡</span>
+                <h3 data-key="flag_c2_title">Octagon</h3>
+                <p data-key="flag_c2_text">Ancient Turkic symbol of statehood.</p>
+            </div>
+            <div class="card">
+                <span class="icon">☀️</span>
+                <h3 data-key="flag_c3_title">Sun with 40 rays</h3>
+                <p data-key="flag_c3_text">Life, light and energy. 40 rays — symbol of completeness.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🌙</span>
+                <h3 data-key="flag_c4_title">Crescent and star</h3>
+                <p data-key="flag_c4_text">Growth and aspiration to the future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== СТРАНЫ ===== -->
+    <section id="countries">
+        <h2 data-key="countries_title">Countries and regions</h2>
+        <p class="section-subtitle" data-key="countries_subtitle">All Turkic peoples who could join the Turkic Family</p>
+        <div class="country-list">
+            <div class="country-item"><strong>🇹🇷 Türkiye</strong><span data-key="c_tr">Istanbul — the largest Turkic city</span></div>
+            <div class="country-item"><strong>🇦🇿 Azərbaycan</strong><span data-key="c_az">Baku — capital of the Turkic Caucasus</span></div>
+            <div class="country-item"><strong>🇰🇿 Qazaqstan</strong><span data-key="c_kz">Astana — heart of the Great Steppe</span></div>
+            <div class="country-item"><strong>🇰🇬 Kyrgyzstan</strong><span data-key="c_kg">Bishkek — land of 40 tribes</span></div>
+            <div class="country-item"><strong>🇺🇿 Oʻzbekiston</strong><span data-key="c_uz">Tashkent — pearl of the Silk Road</span></div>
+            <div class="country-item"><strong>🇹🇲 Türkmenistan</strong><span data-key="c_tm">Ashgabat — land of Turkmens</span></div>
+            <div class="country-item"><strong>🇷🇺 Tatarstan</strong><span data-key="c_tt">Kazan — capital of the Turkic Volga region</span></div>
+            <div class="country-item"><strong>🇷🇺 Çuvaşistan</strong><span data-key="c_cv">Cheboksary — ancient Bulgar land</span></div>
+            <div class="country-item"><strong>🇷🇺 Başkurdistan</strong><span data-key="c_ba">Ufa — land of the Bashkirs</span></div>
+            <div class="country-item"><strong>🇷🇺 Saxa (Yakutia)</strong><span data-key="c_sah">Yakutsk — the northernmost Turkic people</span></div>
+            <div class="country-item"><strong>🇷🇺 Tuva</strong><span data-key="c_tu">Kyzyl — land of the Tuvans</span></div>
+            <div class="country-item"><strong>🇷🇺 Xakasiya</strong><span data-key="c_kh">Abakan — land of the Khakas</span></div>
+        </div>
+    </section>
+
+    <!-- ===== ВСЕ ТЮРКСКИЕ НАРОДЫ ===== -->
+    <section id="peoples">
+        <h2 data-key="peoples_title">All Turkic Peoples</h2>
+        <p class="section-subtitle" data-key="peoples_subtitle">About 40 Turkic peoples live from Yakutia to the Balkans</p>
+        <div class="peoples-table">
+            <div class="peoples-row peoples-header">
+                <div data-key="p_col_name">People</div>
+                <div data-key="p_col_pop">Population</div>
+                <div data-key="p_col_lang">Language</div>
+                <div data-key="p_col_region">Region</div>
+            </div>
+            <div class="peoples-row"><div>Turks</div><div>~70 млн</div><div>Türkçe</div><div>Türkiye, Cyprus</div></div>
+            <div class="peoples-row"><div>Azerbaijanis</div><div>~30 млн</div><div>Azərbaycanca</div><div>Azerbaijan, Iran</div></div>
+            <div class="peoples-row"><div>Uzbeks</div><div>~30 млн</div><div>Oʻzbekcha</div><div>Uzbekistan</div></div>
+            <div class="peoples-row"><div>Kazakhs</div><div>~16 млн</div><div>Қазақша</div><div>Kazakhstan</div></div>
+            <div class="peoples-row"><div>Uyghurs</div><div>~11 млн</div><div>ئۇيغۇرچە</div><div>Xinjiang (China)</div></div>
+            <div class="peoples-row"><div>Turkmens</div><div>~8 млн</div><div>Türkmençe</div><div>Turkmenistan</div></div>
+            <div class="peoples-row"><div>Tatars</div><div>~7 млн</div><div>Татарча</div><div>Tatarstan, Russia</div></div>
+            <div class="peoples-row"><div>Kyrgyz</div><div>~5 млн</div><div>Кыргызча</div><div>Kyrgyzstan</div></div>
+            <div class="peoples-row"><div>Bashkirs</div><div>~1.6 млн</div><div>Башҡортса</div><div>Bashkortostan</div></div>
+            <div class="peoples-row"><div>Chuvash</div><div>~1.5 млн</div><div>Чӑвашла</div><div>Chuvashia</div></div>
+            <div class="peoples-row"><div>Qashqai</div><div>~1.5 млн</div><div>Qaşqayca</div><div>Iran</div></div>
+            <div class="peoples-row"><div>Karakalpaks</div><div>~800 тыс.</div><div>Qaraqalpaqsha</div><div>Karakalpakstan</div></div>
+            <div class="peoples-row"><div>Crimean Tatars</div><div>~500 тыс.</div><div>Qırımtatarca</div><div>Crimea</div></div>
+            <div class="peoples-row"><div>Kumyks</div><div>~500 тыс.</div><div>Къумукъча</div><div>Dagestan</div></div>
+            <div class="peoples-row"><div>Yakuts (Sakha)</div><div>~480 тыс.</div><div>Саха тыла</div><div>Yakutia</div></div>
+            <div class="peoples-row"><div>Karachays</div><div>~300 тыс.</div><div>Къарачайча</div><div>Karachay-Cherkessia</div></div>
+            <div class="peoples-row"><div>Tuvans</div><div>~300 тыс.</div><div>Тыва дыл</div><div>Tuva</div></div>
+            <div class="peoples-row"><div>Gagauz</div><div>~250 тыс.</div><div>Gagauzça</div><div>Moldova</div></div>
+            <div class="peoples-row"><div>Balkars</div><div>~200 тыс.</div><div>Малкъарча</div><div>Kabardino-Balkaria</div></div>
+            <div class="peoples-row"><div>Nogais</div><div>~110 тыс.</div><div>Ногайша</div><div>Dagestan, Stavropol</div></div>
+            <div class="peoples-row"><div>Altai</div><div>~80 тыс.</div><div>Алтай тили</div><div>Altai Republic</div></div>
+            <div class="peoples-row"><div>Khakas</div><div>~75 тыс.</div><div>Хакас тілі</div><div>Khakassia</div></div>
+            <div class="peoples-row"><div>Dolgans</div><div>~8 тыс.</div><div>Дулҕан</div><div>Yakutia, Krasnoyarsk</div></div>
+            <div class="peoples-row"><div>Soyots</div><div>~3.6 тыс.</div><div>Сойот</div><div>Buryatia</div></div>
+            <div class="peoples-row"><div>Kumandins</div><div>~2.9 тыс.</div><div>Куманды</div><div>Altai</div></div>
+            <div class="peoples-row"><div>Teleuts</div><div>~2.6 тыс.</div><div>Телеут</div><div>Kemerovo</div></div>
+            <div class="peoples-row"><div>Tubalars</div><div>~2 тыс.</div><div>Туба</div><div>Altai</div></div>
+            <div class="peoples-row"><div>Karaims</div><div>~2 тыс.</div><div>Къарай тили</div><div>Lithuania, Crimea</div></div>
+            <div class="peoples-row"><div>Krymchaks</div><div>~1.5 тыс.</div><div>Кърымчахча</div><div>Crimea</div></div>
+            <div class="peoples-row"><div>Tofalar</div><div>~800</div><div>Тоъфа дыл</div><div>Irkutsk</div></div>
+            <div class="peoples-row"><div>Chulym</div><div>~400</div><div>Чулымча</div><div>Siberia</div></div>
+        </div>
+    </section>
+
+    <!-- ===== ИСТОРИЯ ===== -->
+    <section id="history">
+        <h2 data-key="history_title">History</h2>
+        <div class="cards">
+            <div class="card">
+                <span class="icon">🏛️</span>
+                <h3 data-key="hist_c1_title">Ancient Turks</h3>
+                <p data-key="hist_c1_text">In the 6th–8th centuries, the Turkic Khaganate existed.</p>
+            </div>
+            <div class="card">
+                <span class="icon">📜</span>
+                <h3 data-key="hist_c2_title">Turan</h3>
+                <p data-key="hist_c2_text">Land of nomadic Turkic peoples.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🌍</span>
+                <h3 data-key="hist_c3_title">Modernity</h3>
+                <p data-key="hist_c3_text">In 2009, the Organization of Turkic States (OTS) was created.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ТАЙМЛАЙН ===== -->
+    <section id="timeline">
+        <h2 data-key="timeline_title">Timeline</h2>
+        <p class="section-subtitle" data-key="timeline_subtitle">History of the Turks from the Khaganate to the OTS</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year" data-key="tl_1_year">552</div>
+                <div class="timeline-content">
+                    <h3 data-key="tl_1_title">Turkic Khaganate</h3>
+                    <p data-key="tl_1_text">The first great Turkic state, founded by Bumin Qaghan.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year" data-key="tl_2_year">922</div>
+                <div class="timeline-content">
+                    <h3 data-key="tl_2_title">Volga Bulgaria adopts Islam</h3>
+                    <p data-key="tl_2_text">The ancestors of the Tatars and Chuvash adopted Islam.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year" data-key="tl_3_year">X–XIII</div>
+                <div class="timeline-content">
+                    <h3 data-key="tl_3_title">Seljuk and Ottoman rise</h3>
+                    <p data-key="tl_3_text">Turks moved to Anatolia and founded the Seljuk, then the Ottoman Empire.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year" data-key="tl_4_year">1871</div>
+                <div class="timeline-content">
+                    <h3 data-key="tl_4_title">Chuvash alphabet</h3>
+                    <p data-key="tl_4_text">Ivan Yakovlev created the modern Chuvash alphabet based on Cyrillic.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year" data-key="tl_5_year">1991</div>
+                <div class="timeline-content">
+                    <h3 data-key="tl_5_title">Independence of Turkic states</h3>
+                    <p data-key="tl_5_text">Azerbaijan, Kazakhstan, Kyrgyzstan, Uzbekistan and Turkmenistan became independent.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year" data-key="tl_6_year">2009</div>
+                <div class="timeline-content">
+                    <h3 data-key="tl_6_title">Organization of Turkic States</h3>
+                    <p data-key="tl_6_text">The OTS was founded to strengthen cooperation.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year" data-key="tl_7_year">2024</div>
+                <div class="timeline-content">
+                    <h3 data-key="tl_7_title">New OTS flag</h3>
+                    <p data-key="tl_7_text">A new common flag was adopted.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ИЗВЕСТНЫЕ ТЮРКИ ===== -->
+    <section id="people">
+        <h2 data-key="people_title">Famous Turks</h2>
+        <p class="section-subtitle" data-key="people_subtitle">People who shaped the Turkic world</p>
+        <div class="cards">
+            <div class="card">
+                <span class="icon">🇹🇷</span>
+                <h3 data-key="p_1_name">Mustafa Kemal Atatürk</h3>
+                <p data-key="p_1_text">Founder and first president of the Republic of Turkey (1881–1938).</p>
+            </div>
+            <div class="card">
+                <span class="icon">📖</span>
+                <h3 data-key="p_2_name">Ğabdulla Tuqay</h3>
+                <p data-key="p_2_text">Great Tatar poet, founder of modern Tatar literature (1886–1913).</p>
+            </div>
+            <div class="card">
+                <span class="icon">📚</span>
+                <h3 data-key="p_3_name">Ivan Yakovlev</h3>
+                <p data-key="p_3_text">Chuvash enlightener, creator of the modern Chuvash alphabet (1848–1930).</p>
+            </div>
+            <div class="card">
+                <span class="icon">⚔️</span>
+                <h3 data-key="p_4_name">Vasily Chapayev</h3>
+                <p data-key="p_4_text">Legendary Red Army commander of the Civil War (1887–1919).</p>
+            </div>
+            <div class="card">
+                <span class="icon">🚀</span>
+                <h3 data-key="p_5_name">Andriyan Nikolayev</h3>
+                <p data-key="p_5_text">Chuvash cosmonaut, twice Hero of the Soviet Union (1929–2004).</p>
+            </div>
+            <div class="card">
+                <span class="icon">🎭</span>
+                <h3 data-key="p_6_name">Nadezhda Pavlova</h3>
+                <p data-key="p_6_text">World-famous Chuvash ballerina, prima of the Bolshoi Theatre.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== МИФОЛОГИЯ ===== -->
+    <section id="mythology">
+        <h2 data-key="myth_title">Turkic Mythology</h2>
+        <p class="section-subtitle" data-key="myth_subtitle">Gods and symbols of the ancient Turks</p>
+        <div class="cards">
+            <div class="card">
+                <span class="icon">🌌</span>
+                <h3 data-key="m_1_name">Tengri</h3>
+                <p data-key="m_1_text">The supreme sky god. The blue color of the Turkic flags comes from him.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🌿</span>
+                <h3 data-key="m_2_name">Umay</h3>
+                <p data-key="m_2_text">Goddess of fertility and childbirth, protector of women and children.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🔥</span>
+                <h3 data-key="m_3_name">Erlik</h3>
+                <p data-key="m_3_text">God of the underworld, ruler of the dead.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🐺</span>
+                <h3 data-key="m_4_name">Asena (Wolf)</h3>
+                <p data-key="m_4_text">The she-wolf who saved the last Turkic boy. Ancestress of the Ashina clan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ТАМГИ ===== -->
+    <section id="tamga">
+        <h2 data-key="tamga_title">Turkic Tamgas</h2>
+        <p class="section-subtitle" data-key="tamga_subtitle">Clan signs of Turkic peoples</p>
+        <div class="cards">
+            <div class="card">
+                <span class="icon">☰</span>
+                <h3 data-key="t_1_name">Kayı (Ottoman)</h3>
+                <p data-key="t_1_text">The tamga of the Kayı tribe, from which the Ottoman dynasty descended.</p>
+            </div>
+            <div class="card">
+                <span class="icon">✕</span>
+                <h3 data-key="t_2_name">Tatar</h3>
+                <p data-key="t_2_text">A common tamga among the Tatars, similar to a cross or bow.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🜂</span>
+                <h3 data-key="t_3_name">Chuvash</h3>
+                <p data-key="t_3_text">Chuvash tamgas often look like a tree, a rake, or a house.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🌙</span>
+                <h3 data-key="t_4_name">Kazakh</h3>
+                <p data-key="t_4_text">Each Kazakh zhuz and clan has its own tamga.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ПРАЗДНИКИ ===== -->
+    <section id="holidays">
+        <h2 data-key="holidays_title">Turkic Holidays</h2>
+        <p class="section-subtitle" data-key="holidays_subtitle">Common celebrations of the Turkic world</p>
+        <div class="cards">
+            <div class="card">
+                <span class="icon">🌸</span>
+                <h3 data-key="h_1_name">Nowruz</h3>
+                <p data-key="h_1_text">Spring New Year, celebrated on March 21.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🌾</span>
+                <h3 data-key="h_2_name">Sabantuy</h3>
+                <p data-key="h_2_text">Tatar and Bashkir summer festival of the plough.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🌱</span>
+                <h3 data-key="h_3_name">Akatuy</h3>
+                <p data-key="h_3_text">Chuvash spring festival marking the end of sowing.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🔥</span>
+                <h3 data-key="h_4_name">Hıdırellez</h3>
+                <p data-key="h_4_text">Turkic spring festival on May 5–6.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== СРАВНЕНИЕ ЯЗЫКОВ ===== -->
+    <section id="languages">
+        <h2 data-key="languages_title">Language Comparison</h2>
+        <p class="section-subtitle" data-key="languages_subtitle">Common words in 12 Turkic languages</p>
+        <div class="table-wrap">
+            <table class="lang-table">
+                <thead>
+                    <tr>
+                        <th data-key="lang_col_word">Word</th>
+                        <th>🇹🇷 Türkçe</th>
+                        <th>🇦🇿 Azərb.</th>
+                        <th>🇰🇿 Қазақша</th>
+                        <th>🇺🇿 Oʻzbekcha</th>
+                        <th>🇰🇬 Кыргызча</th>
+                        <th>🇹🇲 Türkmençe</th>
+                        <th>🏳️ Татарча</th>
+                        <th>🏳️ Башҡортса</th>
+                        <th>🏳️ Чӑвашла</th>
+                        <th>🏳️ Саха тыла</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Water</strong></td>
+                        <td>su</td><td>su</td><td>су</td><td>suv</td><td>суу</td><td>suw</td><td>су</td><td>һыу</td><td>шыв</td><td>уу</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sky</strong></td>
+                        <td>gök</td><td>göy</td><td>көк</td><td>ko'k</td><td>көк</td><td>gök</td><td>күк</td><td>күк</td><td>тӳпе</td><td>халлаан</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Earth</strong></td>
+                        <td>yer</td><td>yer</td><td>жер</td><td>yer</td><td>жер</td><td>ýer</td><td>җир</td><td>ер</td><td>çĕр</td><td>сир</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sun</strong></td>
+                        <td>güneş</td><td>günəş</td><td>күн</td><td>quyosh</td><td>күн</td><td>gün</td><td>кояш</td><td>ҡояш</td><td>хĕвел</td><td>күн</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Moon</strong></td>
+                        <td>ay</td><td>ay</td><td>ай</td><td>oy</td><td>ай</td><td>aý</td><td>ай</td><td>ай</td><td>уйăх</td><td>ый</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Star</strong></td>
+                        <td>yıldız</td><td>ulduz</td><td>жұлдыз</td><td>yulduz</td><td>жылдыз</td><td>ýyldyz</td><td>йолдыз</td><td>йондоҙ</td><td>çăлтăр</td><td>сулус</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fire</strong></td>
+                        <td>ateş</td><td>od</td><td>от</td><td>olov</td><td>от</td><td>ot</td><td>ут</td><td>ут</td><td>вут</td><td>уот</td>
+                    </tr>
+                    <tr>
+                        <td><strong>House</strong></td>
+                        <td>ev</td><td>ev</td><td>үй</td><td>uy</td><td>үй</td><td>öý</td><td>өй</td><td>өй</td><td>çурт</td><td>дьиэ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wolf</strong></td>
+                        <td>kurt</td><td>qurd</td><td>қасқыр</td><td>bo'ri</td><td>карышкыр</td><td>möjek</td><td>бүре</td><td>бүре</td><td>кашкăр</td><td>бөрө</td>
+                    </tr>
+                    <tr>
+                        <td><strong>One</strong></td>
+                        <td>bir</td><td>bir</td><td>бір</td><td>bir</td><td>бир</td><td>bir</td><td>бер</td><td>бер</td><td>пĕр</td><td>биир</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Two</strong></td>
+                        <td>iki</td><td>iki</td><td>екі</td><td>ikki</td><td>эки</td><td>iki</td><td>ике</td><td>ике</td><td>икĕ</td><td>икки</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Three</strong></td>
+                        <td>üç</td><td>üç</td><td>үш</td><td>uch</td><td>үч</td><td>üç</td><td>өч</td><td>өс</td><td>виçĕ</td><td>үс</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ===== АЛФАВИТЫ ===== -->
+    <section id="alphabets">
+        <h2 data-key="alphabets_title">Turkic Alphabets</h2>
+        <p class="section-subtitle" data-key="alphabets_subtitle">Three scripts used by Turkic peoples</p>
+        <div class="alphabets">
+            <div class="alphabet-card">
+                <h3 data-key="a_1_title">Latin</h3>
+                <div class="alphabet-sample">A B C Ç D E Ə F G Ğ H I İ J K Q L M N O Ö P R S Ş T U Ü V Y Z</div>
+                <p data-key="a_1_text">Used by Turkey, Azerbaijan, Turkmenistan, Uzbekistan. Also in Kazakhstan (transition).</p>
+            </div>
+            <div class="alphabet-card">
+                <h3 data-key="a_2_title">Cyrillic</h3>
+                <div class="alphabet-sample">А Б В Г Ғ Д Е Ё Ж З И Й К Қ Л М Н Ң О Ө П Р С Т У Ұ Ү Ф Х Һ Ц Ч Ш Щ Ъ Ы І Ь Э Ю Я</div>
+                <p data-key="a_2_text">Used by Kazakhstan (until 2025), Kyrgyzstan, Tatarstan, Bashkortostan, Chuvashia, Yakutia.</p>
+            </div>
+            <div class="alphabet-card">
+                <h3 data-key="a_3_title">Arabic</h3>
+                <div class="alphabet-sample">ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي</div>
+                <p data-key="a_3_text">Used by Uyghurs, Iranian Turks, and historically by all Muslim Turkic peoples.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== НАСЕЛЕНИЕ ===== -->
+    <section id="population">
+        <h2 data-key="population_title">Population by Country</h2>
+        <p class="section-subtitle" data-key="population_subtitle">Number of Turkic people in each country</p>
+        <div class="chart">
+            <div class="chart-row">
+                <div class="chart-label">🇹🇷 Türkiye</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="100%"></div></div>
+                <div class="chart-value">~70 млн</div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">🇺🇿 Uzbekistan</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="43%"></div></div>
+                <div class="chart-value">~30 млн</div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">🇮🇷 Iran (Turks)</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="30%"></div></div>
+                <div class="chart-value">~20 млн</div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">🇰🇿 Kazakhstan</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="23%"></div></div>
+                <div class="chart-value">~16 млн</div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">🇨🇳 China (Uyghurs)</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="16%"></div></div>
+                <div class="chart-value">~11 млн</div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">🇦🇿 Azerbaijan</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="14%"></div></div>
+                <div class="chart-value">~10 млн</div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">🇷🇺 Russia (all Turks)</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="14%"></div></div>
+                <div class="chart-value">~10 млн</div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">🇹🇲 Turkmenistan</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="11%"></div></div>
+                <div class="chart-value">~8 млн</div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">🇰🇬 Kyrgyzstan</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="7%"></div></div>
+                <div class="chart-value">~5 млн</div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">🇩🇪 Germany (Turks)</div>
+                <div class="chart-bar-wrap"><div class="chart-bar" data-width="4%"></div></div>
+                <div class="chart-value">~3 млн</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== РАССТОЯНИЕ ===== -->
+    <section id="distance">
+        <h2 data-key="distance_title">From Yakutia to Turkey</h2>
+        <p class="section-subtitle" data-key="distance_subtitle">The Turkic world stretches over 8000 km</p>
+        <div class="distance">
+            <div class="distance-line">
+                <div class="distance-point">
+                    <strong>Yakutsk</strong>
+                    <span>62°N, 129°E</span>
+                </div>
+                <div class="distance-point">
+                    <strong>Istanbul</strong>
+                    <span>41°N, 29°E</span>
+                </div>
+            </div>
+            <div class="distance-value">~8000 км</div>
+        </div>
+    </section>
+
+    <!-- ===== ПОИСК ===== -->
+    <section id="search">
+        <h2 data-key="search_title">Search</h2>
+        <div class="search-box">
+            <input type="text" class="search-input" id="searchInput" data-key="search_placeholder" placeholder="Search sections...">
+            <span class="search-icon">🔍</span>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+    </section>
+
+    <!-- ===== СЧЁТЧИК ===== -->
+    <section id="counter">
+        <div class="counter">
+            <div class="counter-number" id="counterNumber">0</div>
+            <div class="counter-label" data-key="counter_label">visitors</div>
+        </div>
+    </section>
+
+    <!-- ===== ФАКТЫ ===== -->
+    <section id="facts">
+        <h2 data-key="facts_title">Facts</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-key="th_param">Parameter</th>
+                        <th data-key="th_value">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-key="f_name">Name</td><td data-key="f_name_v">Turkic Family</td></tr>
+                    <tr><td data-key="f_pop">Population</td><td data-key="f_pop_v">~200 million people</td></tr>
+                    <tr><td data-key="f_terr">Territory</td><td data-key="f_terr_v">From Yakutia to Turkey</td></tr>
+                    <tr><td data-key="f_lang">Language family</td><td data-key="f_lang_v">Altaic (Turkic branch)</td></tr>
+                    <tr><td data-key="f_city">Largest city</td><td data-key="f_city_v">Istanbul</td></tr>
+                    <tr><td data-key="f_flag">Flag</td><td data-key="f_flag_v">Turquoise, with octagon, sun, crescent and star</td></tr>
+                    <tr><td data-key="f_motto">Motto</td><td data-key="f_motto_v">"One people — one sky"</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer>
+        <div class="footer-flag">🟦⬡☀️🌙</div>
+        <p data-key="footer_title">Turkic Family — land of all Turks</p>
+        <p class="footer-copy">© 2026. <span data-key="footer_copy">Symbolic project.</span></p>
+    </footer>
+
+    <!-- ===== КНОПКА НАСТРОЕК ===== -->
+    <button class="settings-btn" onclick="toggleSettings()" title="Settings">⚙️</button>
+
+    <!-- ===== ПАНЕЛЬ НАСТРОЕК ===== -->
+    <div class="settings-panel" id="settingsPanel">
+        <h3 data-key="settings_title">Settings</h3>
+        <div class="setting-group">
+            <label data-key="settings_lang">Language</label>
+            <select class="lang-select" id="langSelect" onchange="setLanguage(this.value)">
+                <option value="en">🇬🇧 English</option>
+                <option value="ru">🇷🇺 Русский</option>
+                <option value="tr">🇹🇷 Türkçe</option>
+                <option value="az">🇦🇿 Azərbaycanca</option>
+                <option value="kk">🇰🇿 Қазақша</option>
+                <option value="uz">🇺🇿 Oʻzbekcha</option>
+                <option value="ky">🇰🇬 Кыргызча</option>
+                <option value="tk">🇹🇲 Türkmençe</option>
+                <option value="tt">🏳️ Татарча</option>
+                <option value="ba">🏳️ Башҡортса</option>
+                <option value="cv">🏳️ Чӑвашла</option>
+                <option value="sah">🏳️ Саха тыла</option>
+            </select>
+        </div>
+        <div class="setting-group">
+            <label data-key="settings_theme">Theme</label>
+            <div class="theme-buttons">
+                <button class="theme-btn active" id="themeDark" onclick="setTheme('dark')" data-key="theme_dark">Dark</button>
+                <button class="theme-btn" id="themeLight" onclick="setTheme('light')" data-key="theme_light">Light</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== КНОПКА НАВЕРХ ===== -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <!-- ===== ПОДКЛЮЧЕНИЕ СКРИПТОВ ===== -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
